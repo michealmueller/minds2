@@ -1,0 +1,92 @@
+.m-blockchain--splash {
+  minds-topbar, minds-sidebar, m-footer, m-messenger {
+    display: none;
+  }
+}
+
+m-blockchain--marketing {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .m-marketing--header {
+    height: 100%;
+    overflow: visible;
+    //padding: 175px 0 250px;
+
+    .m-marketing--background-video {
+      position: fixed !important;
+    }
+  }
+
+  .m-marketing--header-inner {
+    text-align: center;
+    box-sizing: border-box;
+
+    img {
+      width: 300px;
+    }
+
+    h1 {
+      margin-top: 46px;
+    }
+    h3 {
+      padding-right: 0;
+    }
+    h4 {
+      margin-top: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      color: #FFF;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+    p {
+      font-size: 22px;
+      color: #FFF;
+      font-weight: 400;
+      font-family: Roboto;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  .m-blockchain--marketing--preregister {
+    max-width: 440px;
+    margin: 26px auto;
+
+    .m-login-box {
+      background: transparent !important;
+
+      input {
+        border-radius: 3px;
+        background: rgba(255,255,255,0.9);
+        font-family: Roboto;
+        font-weight: 600;
+      }
+      .m-register-btn {
+        background: transparent;
+        border: 1px solid #FFF;
+        font-weight: 300;
+        font-family: Roboto;
+        letter-spacing: 0.25px;
+
+        @media screen and (max-width: 700px) {
+         padding: 0;
+        }
+        padding: 0;
+      }
+      .m-register-tac {
+        color: #FFF;
+        font-family: Roboto;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-size: 12px;
+      }
+    }
+  }
+
+}
