@@ -25,7 +25,7 @@ class config implements Interfaces\Api, Interfaces\ApiIgnorePam
         $minds = [
             "cdn_url" => Minds\Core\Config::_()->get('cdn_url') ?: Minds\Core\Config::_()->cdn_url,
             "site_url" => Minds\Core\Config::_()->get('site_url') ?: Minds\Core\Config::_()->site_url,
-            "socket_server" => Minds\Core\Config::_()->get('sockets-server-uri') ?: 'ha-socket-io-us-east-1.minds.com:3030',
+            "socket_server" => Minds\Core\Config::_()->get('sockets-server-uri') ?: 'ha-socket-io-us-east-1.planetconcourse.world:3030',
             "thirdpartynetworks" => Minds\Core\Di\Di::_()->get('ThirdPartyNetworks\Manager')->availableNetworks(),
             "categories" => Minds\Core\Config::_()->get('categories') ?: [],
             "stripe_key" => Minds\Core\Config::_()->get('payments')['stripe']['public_key'],

@@ -39,16 +39,16 @@
         font-family: 'Lato', helvetica;"> 
         <p>
         The best way for you to show your support is to check-in, post to your subscribers, 
-        <a href="https://www.minds.com/boost?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>">boost</a> your content and engage with the community, 
+        <a href="https://www.planetconcourse.world/boost?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>">boost</a> your content and engage with the community,
         so please use the button below and claim your 1,000 points to use yourself or 
-        <a href="https://www.minds.com/wire?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>">wire</a> to another channel.
+        <a href="https://www.planetconcourse.world/wire?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>">wire</a> to another channel.
         </p> 
       </td>
     </tr>
 
     <tr>
       <td height="50px" style="text-align:center;">
-        <a href="https://www.minds.com/?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>"
+        <a href="https://www.planetconcourse.world/?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']?>&validator=<?= $vars['validator'] ?>"
           style="padding:16px 32px; background-color:#4caf50; color:#FFF; text-decoration:none; font-weight:bold; border-radius:3px;">
           Claim 1,000 points
         </a>
@@ -74,7 +74,7 @@
         line-height: 22px;
         letter-spacing: 0.2px;
         font-family: 'Lato', helvetica;">
-       <a href="https://minds.com/?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']; ?>&validator=<?= $vars['validator'] ?>" style="text-decoration:none; color:inherit; font-weight:bold; font-style:italic;">The Minds Team</a>
+       <a href="https://planetconcourse.world/?__e_ct_guid=<?= $vars['guid']?>&campaign=<?= $vars['campaign']; ?>&validator=<?= $vars['validator'] ?>" style="text-decoration:none; color:inherit; font-weight:bold; font-style:italic;">The Minds Team</a>
       </td>
     </tr>
   </tbody>

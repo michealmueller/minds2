@@ -64,7 +64,7 @@ class Download
 
         $content = $this->http->get($this->src, [
             'curl' => [
-                CURLOPT_USERAGENT => 'MindsMediaProxy/3.0 (+http://www.minds.com/)',
+                CURLOPT_USERAGENT => 'MindsMediaProxy/3.0 (+http://www.planetconcourse.world/)',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_FOLLOWLOCATION => 1,
                 CURLOPT_NOSIGNAL => 1,

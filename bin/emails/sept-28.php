@@ -14,7 +14,7 @@
                                         <!-- Email body -->
 
                                         <p align="center">
-                                            <img src="https://www.minds.com/_graphics/minds_2.png" align="center"/>
+                                            <img src="https://www.planetconcourse.world/_graphics/minds_2.png" align="center"/>
                                         </p>
 
 
@@ -58,7 +58,7 @@
                                 </tr>
                                <tr>
                                         <td>
-                                            <a href="https://www.minds.com/emails/unsubscribe/<?= $vars['username']?>/<?= $vars['email']?>" align="center" style="color:#888">
+                                            <a href="https://www.planetconcourse.world/emails/unsubscribe/<?= $vars['username']?>/<?= $vars['email']?>" align="center" style="color:#888">
                                                 click here to un-subscribe     
                                             </a> from future emails.
                                         </td>

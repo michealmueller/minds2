@@ -180,8 +180,8 @@
         <target>Esta actividad esta marcada como spam.</target>
       </trans-unit>
       <trans-unit id="MINDS__NEWSFEED__SINGLE__APPEAL_FLAG_NOTE">
-        <source>If you wish to appeal, please contact us at info@minds.com.</source>
-        <target>Si quieres apelar, por favor contactanos a info@minds.com.</target>
+        <source>If you wish to appeal, please contact us at info@planetconcourse.world.</source>
+        <target>Si quieres apelar, por favor contactanos a info@planetconcourse.world.</target>
       </trans-unit>
       <trans-unit id="MINDS__NEWSFEED__1_BY_1_CONVERSION">
         <source>1 point = 1 view</source>
@@ -1458,8 +1458,8 @@
         <target>Cancelar Plus</target>
       </trans-unit>
       <trans-unit id="PLUS__SUBSCRIPTION__CONGRATULATE_PLUS">
-        <source>Congratulations, you are now a Minds Plus member!</source>
-        <target>¡Felicitaciones! Ahora eres un miembro Minds Plus.</target>
+        <source>Congratulations, you are now a Flutterby Plus member!</source>
+        <target>¡Felicitaciones! Ahora eres un miembro Flutterby Plus.</target>
       </trans-unit>
       <trans-unit id="PLUS__VERIFY__LINKS_INPUT_LABEL">
         <source>Please enter two social media links, which link back to your Minds channel page</source>
@@ -1943,8 +1943,8 @@
         <target>Please explain why you think this content should not be on Minds.</target>
       </trans-unit>
       <trans-unit id="REPORT__CREATOR__DMCA_NOTICE">
-        <source>Please submit a DMCA notice to copyright@minds.com.</source>
-        <target>Please submit a DMCA notice to copyright@minds.com.</target>
+        <source>Please submit a DMCA notice to copyright@planetconcourse.world.</source>
+        <target>Please submit a DMCA notice to copyright@planetconcourse.world.</target>
       </trans-unit>
       <trans-unit id="REPORT__CREATOR__SUBMIT_ACTION">
         <source>SUBMIT</source>
@@ -3059,8 +3059,8 @@
         <note>Completed</note>
       </trans-unit>
       <trans-unit id="M__FEATURE__MINDS_PLUS">
-        <source>Minds Plus</source>
-        <target>Minds Plus</target>
+        <source>Flutterby Plus</source>
+        <target>Flutterby Plus</target>
       </trans-unit>
       <trans-unit id="M__COMMON__POINTS_WITH_VALUE">
         <source><x id="INTERPOLATION" /> points</source>

@@ -19,35 +19,35 @@ class sitemap extends core\page implements Interfaces\page
         echo <<< XML
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
       <url>
-          <loc>https://www.minds.com/</loc>
+          <loc>https://www.planetconcourse.world/</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/newsfeed</loc>
+          <loc>https://www.planetconcourse.world/newsfeed</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/minds</loc>
+          <loc>https://www.planetconcourse.world/minds</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/plus</loc>
+          <loc>https://www.planetconcourse.world/plus</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/discovery/trending/channels</loc>
+          <loc>https://www.planetconcourse.world/discovery/trending/channels</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/discovery/trending/channels</loc>
+          <loc>https://www.planetconcourse.world/discovery/trending/channels</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/blog/trending</loc>
+          <loc>https://www.planetconcourse.world/blog/trending</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
       <url>
-          <loc>https://www.minds.com/wire</loc>
+          <loc>https://www.planetconcourse.world/wire</loc>
           <lastmod>2018-02-09T02:32:45+00:00</lastmod>
       </url>
   </urlset>        

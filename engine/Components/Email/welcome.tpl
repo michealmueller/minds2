@@ -10,7 +10,7 @@
     </tr>
     <tr>
       <td>
-        Welcome to Minds! Our crypto <a href="https://www.minds.com/newsfeed/793558593763016704">launch</a> is imminent. Here are 200 free views. Please make your first post and stay tuned for the next evolution
+        Welcome to Minds! Our crypto <a href="https://www.planetconcourse.world/newsfeed/793558593763016704">launch</a> is imminent. Here are 200 free views. Please make your first post and stay tuned for the next evolution
       </td>
     </tr>
     <tr>
