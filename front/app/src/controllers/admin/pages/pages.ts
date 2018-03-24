@@ -6,7 +6,6 @@ import { Subscription } from 'rxjs/Rx';
 
 import { Client, Upload } from '../../../services/api';
 import { InlineEditorComponent } from '../../../common/components/editors/inline-editor.component';
-import { tinymce } from '../../../common/components/editors/tinymce';
 
 @Component({
   moduleId: module.id,
@@ -30,7 +29,7 @@ export class AdminPages {
   status: string = 'saved';
   headerFile: File;
   paramsSubscription: Subscription;
-  @ViewChild('inlineEditor') private editor: tinymce;
+  @ViewChild('inlineEditor') private editor: InlineEditorComponent;
 
   constructor(public client: Client, public upload: Upload, private route: ActivatedRoute) {
   }
