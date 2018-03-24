@@ -38,9 +38,9 @@ apt-get install -y \
   php$php_version-zip
 
 # Setup nginx configs
-rm -rf /etc/nginx/sites-enabled/default
-cp -f /var/www/Minds/conf/nginx-site.conf /etc/nginx/sites-enabled/minds.conf
-cp -f /var/www/Minds/conf/nginx.conf /etc/nginx/nginx.conf
+#rm -rf /etc/nginx/sites-enabled/default
+#cp -f /var/www/Minds/conf/nginx-site.conf /etc/nginx/sites-enabled/minds.conf
+#cp -f /var/www/Minds/conf/nginx.conf /etc/nginx/nginx.conf
 
 # Tweak PHP configs
 
@@ -74,10 +74,10 @@ sed -i 's/^start_rpc.*$/start_rpc: true/' /etc/cassandra/cassandra.yaml
 # Setup cassandra driver
 apt-get install -y php$php_version-dev libgmp-dev libpcre3-dev g++ make cmake libssl-dev openssl
 if [ ! -f $cassandra_so ]; then
-  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/14.04/dependencies/libuv/v1.8.0/libuv_1.8.0-1_amd64.deb
-  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/14.04/dependencies/libuv/v1.8.0/libuv-dev_1.8.0-1_amd64.deb
-  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.4.2/cassandra-cpp-driver_2.4.2-1_amd64.deb
-  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/14.04/cassandra/v2.4.2/cassandra-cpp-driver-dev_2.4.2-1_amd64.deb
+  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/16.04/dependencies/libuv/v1.8.0/libuv_1.8.0-1_amd64.deb
+  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/16.04/dependencies/libuv/v1.8.0/libuv-dev_1.8.0-1_amd64.deb
+  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/16.04/cassandra/v2.4.2/cassandra-cpp-driver_2.4.2-1_amd64.deb
+  wget -nv http://downloads.datastax.com/cpp-driver/ubuntu/16.04/cassandra/v2.4.2/cassandra-cpp-driver-dev_2.4.2-1_amd64.deb
   dpkg -i libuv_1.8.0-1_amd64.deb
   dpkg -i libuv-dev_1.8.0-1_amd64.deb
   dpkg -i cassandra-cpp-driver_2.4.2-1_amd64.deb
@@ -136,7 +136,7 @@ if [ -f "/var/www/Minds/engine/settings.php" ]; then
     --graceful-storage-provision \
     --username=minds \
     --password=password \
-    --email=minds@dev.minds.io
+    --email=info@planetconcourse.world
 else
   echo "Installing Minds…"
 
@@ -147,7 +147,7 @@ else
     --domain=dev.minds.io \
     --username=minds \
     --password=password \
-    --email=minds@dev.minds.io \
+    --email=info@planetconcourse.world \
     --private-key=/var/www/Minds/.dev/minds.pem \
     --public-key=/var/www/Minds/.dev/minds.pub
 fi

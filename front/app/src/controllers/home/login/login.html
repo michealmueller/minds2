@@ -1,27 +1,16 @@
-<section class="m-video-banner">
+<section class="minds-homepage-banner m-video-banner" #banner [class.m-video-banner-expand]="banner.expand">
   <div class="video">
-    <video autoplay muted loop poster="{{minds.cdn_assets_url}}assets/videos/earth-1/earth-1.png" *ngIf="flags.canPlayInlineVideos">
-      <!--<source src="assets/videos/traffic-1/traffic-1.webm" type="video/webm">
-      <source src="assets/videos/traffic-1/traffic-1.mp4" type="video/mp4">-->
-      <source src="{{minds.cdn_assets_url}}assets/videos/earth-1/earth-1.webm" type="video/webm">
-      <source src="{{minds.cdn_assets_url}}assets/videos/earth-1/earth-1.mp4" type="video/mp4">
+    <video autoplay muted loop poster="{{minds.cdn_url}}assets/videos/earth-1/earth-1.gif" *ngIf="flags.canPlayInlineVideos">
+      <source src="{{minds.cdn_url}}assets/videos/earth-1/earth-1.webm" type="video/webm">
+      <source src="{{minds.cdn_url}}assets/videos/earth-1/earth-1.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="overlay overlay--0.6">
-
-      <div class="" style="max-width:400px">
-        <div class="mdl-color-text--white">
-          <h3 i18n="@@MINDS__HOME__LOGIN__LOGIN">Login to Minds</h3>
-        </div>
-        <minds-form-login (done)="loggedin()" (doneRegistered)="registered()"></minds-form-login>
-      </div>
-
-      <div class="" style="max-width:400px">
-        <div class="mdl-color-text--white">
-          <h3 i18n="@@M__COMMON__START_A_CHANNEL">Not on Minds? Start a channel</h3>
-        </div>
-        <minds-form-register [referrer]="referrer" (done)="registered()"></minds-form-register>
-      </div>
-
-  </div>
 </section>
+<div class="mdl-cell mdl-cell--6-col m-homepage-signup" style="padding-top:0;max-width:500px;margin-left:auto;margin-right:auto;">
+  <div class="" style="max-width:500px">
+    <div class="mdl-color-text--white">
+      <h3 i18n="@@MINDS__HOME__LOGIN__LOGIN" style="color:black;">Login to Planet Concourse</h3>
+    </div>
+    <minds-form-login (done)="loggedin()" (doneRegistered)="registered()"></minds-form-login>
+  </div>
+</div>

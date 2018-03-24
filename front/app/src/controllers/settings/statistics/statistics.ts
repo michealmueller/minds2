@@ -16,7 +16,7 @@ export class SettingsStatistics {
   settings: string;
   data = {
     fullname: 'minds',
-    email: 'minds@minds.com',
+    email: 'info@planetconcourse.world',
     memberSince: new Date(),
     lastLogin: new Date(),
     storage: '0 GB\'s',
@@ -27,7 +27,8 @@ export class SettingsStatistics {
   };
   constructor(public client: Client) {
     this.minds = window.Minds;
-    this.minds.cdn_url = 'https://d3ae0shxev0cb7.cloudfront.net';
+    //this.minds.cdn_url = 'https://d3ae0shxev0cb7.cloudfront.net';
+    this.minds.cdn_url = 'https://planetconcourse.world';
   }
 
 }
