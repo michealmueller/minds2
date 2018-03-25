@@ -4154,7 +4154,7 @@
       </trans-unit>
       <trans-unit id="MONETIZATION__OVERVIEW__REVENUE_TOOLTIP" datatype="html">
         <source>
-    You earn 25% of all revenue your referrals bring to Minds.
+    You earn 25% of all revenue your referrals bring to Planet Concourse.
   </source>
         <target/>
         <context-group purpose="location">

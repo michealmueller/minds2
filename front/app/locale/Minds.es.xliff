@@ -1143,7 +1143,7 @@
         <target>Ingresos</target>
       </trans-unit>
       <trans-unit id="MONETIZATION__OVERVIEW__REVENUE_TOOLTIP">
-        <source>You earn 25% of all revenue your referrals bring to Minds.</source>
+        <source>You earn 25% of all revenue your referrals bring to Planet Concourse.</source>
         <target>Ganas el 25% de todos los ingresos que tus referidos traigan a Minds</target>
       </trans-unit>
       <trans-unit id="MONETIZATION__OVERVIEW__BREAKDOWN_LINK">
