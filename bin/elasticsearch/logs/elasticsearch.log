@@ -1,17 +1,17 @@
-[2018-03-24 22:26:05,462][INFO ][node                     ] [Michael Nowman] version[1.7.2], pid[1766], build[e43676b/2015-09-14T09:49:53Z]
-[2018-03-24 22:26:05,463][INFO ][node                     ] [Michael Nowman] initializing ...
-[2018-03-24 22:26:05,518][INFO ][plugins                  ] [Michael Nowman] loaded [], sites []
-[2018-03-24 22:26:05,546][INFO ][env                      ] [Michael Nowman] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [129.6gb], net total_space [145.3gb], types [ext4]
-[2018-03-24 22:26:07,259][INFO ][node                     ] [Michael Nowman] initialized
-[2018-03-24 22:26:07,259][INFO ][node                     ] [Michael Nowman] starting ...
-[2018-03-24 22:26:07,341][INFO ][transport                ] [Michael Nowman] bound_address {inet[/127.0.0.1:9302]}, publish_address {inet[/10.142.0.2:9302]}
-[2018-03-24 22:26:07,354][INFO ][discovery                ] [Michael Nowman] elasticsearch/pUsrbC77R_eJzhSI6teQWg
-[2018-03-24 22:26:11,124][INFO ][cluster.service          ] [Michael Nowman] new_master [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]], reason: zen-disco-join (elected_as_master)
-[2018-03-24 22:26:11,148][INFO ][http                     ] [Michael Nowman] bound_address {inet[/127.0.0.1:9202]}, publish_address {inet[/10.142.0.2:9202]}
-[2018-03-24 22:26:11,148][INFO ][node                     ] [Michael Nowman] started
-[2018-03-24 22:26:11,162][INFO ][gateway                  ] [Michael Nowman] recovered [0] indices into cluster_state
-[2018-03-24 22:27:07,376][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
+[2018-03-26 12:32:50,979][INFO ][node                     ] [Edwin Jarvis] version[1.7.2], pid[31368], build[e43676b/2015-09-14T09:49:53Z]
+[2018-03-26 12:32:50,980][INFO ][node                     ] [Edwin Jarvis] initializing ...
+[2018-03-26 12:32:51,056][INFO ][plugins                  ] [Edwin Jarvis] loaded [], sites []
+[2018-03-26 12:32:51,097][INFO ][env                      ] [Edwin Jarvis] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [129.5gb], net total_space [145.3gb], types [ext4]
+[2018-03-26 12:32:53,252][INFO ][node                     ] [Edwin Jarvis] initialized
+[2018-03-26 12:32:53,252][INFO ][node                     ] [Edwin Jarvis] starting ...
+[2018-03-26 12:32:53,369][INFO ][transport                ] [Edwin Jarvis] bound_address {inet[/127.0.0.1:9308]}, publish_address {inet[/10.142.0.2:9308]}
+[2018-03-26 12:32:53,389][INFO ][discovery                ] [Edwin Jarvis] elasticsearch/5EX8Tx0XQ--wvCfxMCIX_A
+[2018-03-26 12:32:57,194][INFO ][cluster.service          ] [Edwin Jarvis] new_master [Edwin Jarvis][5EX8Tx0XQ--wvCfxMCIX_A][instance-3][inet[/10.142.0.2:9308]], reason: zen-disco-join (elected_as_master)
+[2018-03-26 12:32:57,227][INFO ][http                     ] [Edwin Jarvis] bound_address {inet[/127.0.0.1:9208]}, publish_address {inet[/10.142.0.2:9208]}
+[2018-03-26 12:32:57,228][INFO ][node                     ] [Edwin Jarvis] started
+[2018-03-26 12:32:57,243][INFO ][gateway                  ] [Edwin Jarvis] recovered [0] indices into cluster_state
+[2018-03-26 12:33:53,393][WARN ][cluster.service          ] [Edwin Jarvis] failed to reconnect to node [Edwin Jarvis][5EX8Tx0XQ--wvCfxMCIX_A][instance-3][inet[/10.142.0.2:9308]]
+org.elasticsearch.transport.ConnectTransportException: [Edwin Jarvis][inet[/10.142.0.2:9308]] connect_timeout[30s]
 	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
@@ -20,7 +20,7 @@ org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
+Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9308
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
@@ -31,8 +31,8 @@ Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
 	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
 	... 3 more
-[2018-03-24 22:28:07,404][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
+[2018-03-26 12:34:53,411][WARN ][cluster.service          ] [Edwin Jarvis] failed to reconnect to node [Edwin Jarvis][5EX8Tx0XQ--wvCfxMCIX_A][instance-3][inet[/10.142.0.2:9308]]
+org.elasticsearch.transport.ConnectTransportException: [Edwin Jarvis][inet[/10.142.0.2:9308]] connect_timeout[30s]
 	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
@@ -41,7 +41,7 @@ org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
+Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9308
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
@@ -52,8 +52,8 @@ Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
 	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
 	... 3 more
-[2018-03-24 22:29:07,425][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
+[2018-03-26 12:35:53,427][WARN ][cluster.service          ] [Edwin Jarvis] failed to reconnect to node [Edwin Jarvis][5EX8Tx0XQ--wvCfxMCIX_A][instance-3][inet[/10.142.0.2:9308]]
+org.elasticsearch.transport.ConnectTransportException: [Edwin Jarvis][inet[/10.142.0.2:9308]] connect_timeout[30s]
 	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
@@ -62,7 +62,7 @@ org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
+Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9308
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
@@ -73,8 +73,8 @@ Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
 	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
 	... 3 more
-[2018-03-24 22:30:07,444][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
+[2018-03-26 12:36:53,441][WARN ][cluster.service          ] [Edwin Jarvis] failed to reconnect to node [Edwin Jarvis][5EX8Tx0XQ--wvCfxMCIX_A][instance-3][inet[/10.142.0.2:9308]]
+org.elasticsearch.transport.ConnectTransportException: [Edwin Jarvis][inet[/10.142.0.2:9308]] connect_timeout[30s]
 	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
 	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
@@ -83,511 +83,7 @@ org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:31:07,461][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:32:07,476][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:33:07,495][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:34:07,506][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:35:07,517][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:36:07,528][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:37:07,539][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:38:07,549][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:39:07,559][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:40:07,569][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:41:07,579][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:42:07,589][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:43:07,599][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:44:07,608][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:45:07,617][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:46:07,626][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:47:07,636][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:48:07,646][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:49:07,655][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:50:07,665][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:51:07,674][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:52:07,684][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:53:07,694][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
-	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
-	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
-	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
-	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
-	... 3 more
-[2018-03-24 22:54:07,703][WARN ][cluster.service          ] [Michael Nowman] failed to reconnect to node [Michael Nowman][pUsrbC77R_eJzhSI6teQWg][instance-3][inet[/10.142.0.2:9302]]
-org.elasticsearch.transport.ConnectTransportException: [Michael Nowman][inet[/10.142.0.2:9302]] connect_timeout[30s]
-	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:825)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:758)
-	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:731)
-	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:216)
-	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:584)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9302
+Caused by: java.net.ConnectException: Connection refused: /10.142.0.2:9308
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
